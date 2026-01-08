@@ -303,9 +303,6 @@ const App: React.FC = () => {
             <div className="text-zinc-400 text-sm">
               &copy; {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
             </div>
-            <p className="text-zinc-600 text-xs">
-              Built with React, Tailwind, and Gemini AI.
-            </p>
           </div>
         </footer>
 

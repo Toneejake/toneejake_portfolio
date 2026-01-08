@@ -63,6 +63,33 @@ Follow these exact steps to deploy your portfolio.
     *   (Optional) Add `http://localhost:5173/` so it still works on your computer.
     *   Click **Save**.
 
+## Phase 4: Custom Domain Setup (toneejake.tech)
+
+1.  **Vercel Dashboard**:
+    *   Go to your project settings in Vercel.
+    *   Click on **Domains** in the left sidebar.
+    *   Enter `toneejake.tech` in the input field and click **Add**.
+    *   (Recommended) Also add `www.toneejake.tech` and choose direct it to the main domain.
+
+2.  **DNS Configuration (at your Domain Registrar)**:
+    *   Log in to where you bought your domain (e.g., Namecheap, GoDaddy, Hostinger).
+    *   Look for **DNS Management** or **Name Server Settings**.
+    *   **Option A: Trusted Name Servers (Easiest)**
+        *   Change your "Nameservers" to "Custom DNS" and set them to:
+            *   `ns1.vercel-dns.com`
+            *   `ns2.vercel-dns.com`
+    *   **Option B: A Records (If you want to keep using your registrar's email/other services)**
+        *   Add/Edit an **A Record**:
+            *   Host/Name: `@`
+            *   Value: `76.76.21.21`
+        *   Add/Edit a **CNAME Record**:
+            *   Host/Name: `www`
+            *   Value: `cname.vercel-dns.com`
+
+3.  **Verification**:
+    *   Back in Vercel, it might take a few minutes to verify.
+    *   Once you see green checkmarks, your site is live at `toneejake.tech`!
+
 ## Troubleshooting
 
 *   **"Build Failed"**: Check the "Build Logs" in Vercel. Usually, it's a TypeScript error.

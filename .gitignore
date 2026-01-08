@@ -27,3 +27,5 @@ dist-ssr
 
 # Raw Data (Migrated to constants.ts)
 references_projects&certificates/
+
+DEPLOYMENT_GUIDE.md
