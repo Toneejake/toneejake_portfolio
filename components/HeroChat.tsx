@@ -181,7 +181,7 @@ const HeroChat: React.FC = () => {
 
             {/* Disclaimer */}
             <div className="mt-8 text-zinc-600 text-xs text-center max-w-lg">
-                Powered by Gemini 2.0. This AI answers based on John's portfolio data but may occasionally hallucinate.
+                This AI answers based on Kervin's portfolio data.
             </div>
         </div>
     );
