@@ -1,0 +1,478 @@
+{
+  "projects": [
+    {
+      "Item/Project Name": "Studybuddy",
+      "Description": "An intelligent learning platform built with Python and Django that optimizes student retention  using the SM-2 spaced repetition algorithm. It features a rule-based NLP chatbot tutor designed to provide context-aware explanations and manage study schedules based on memory performance.",
+      "Date Completed": "2025-08-01 00:00:00",
+      "File/Link to Sample": "https://github.com/Toneejake/studybuddy-prototype",
+      "Reflection ": "This project helped my understanding of how to translate academic theories into functional code. It was my first major dive into NLP, teaching me how to handle intent classification and entity extraction without relying solely on external APIs, which is crucial for building efficient, localized AI tools.",
+      "Skills Demonstrated": "Programming: Python, Django, SQL. \nAI/ML: SM-2 Algorithm Implementation, Natural Language Processing (NLP), Intent Classification. \nSoftware Engineering: Full-stack Development, Logic-based System Design."
+    },
+    {
+      "Item/Project Name": "Hospital Management",
+      "Description": "A full-stack healthcare administration platform developed using PHP and MySQL to streamline patient records, doctor scheduling, and billing. It integrates the OpenFDA API to provide automated drug recommendations, ensuring data-driven support for medical staff.",
+      "Date Completed": "2025-03-01 00:00:00",
+      "File/Link to Sample": "https://github.com/Toneejake/hospital-management",
+      "Reflection ": "Developing this system taught me the importance of data integrity and secure user authentication in sensitive environments. Integrating a third-party API (OpenFDA) was a key learning point as I learned a lot about using APIs.",
+      "Skills Demonstrated": "Web Development: PHP, MySQL, Bootstrap 5, jQuery. Integration: REST API (OpenFDA), JSON handling. Database: Relational Database Design, SQL queries. UI/UX: Responsive Design, Select2 implementation."
+    },
+    {
+      "Item/Project Name": "Trashbayoyong",
+      "Description": "A smart waste management platform that uses Google Gemini 2.5 Flash to classify waste and provide creative upcycling (DIY) suggestions via real-time image analysis. It features a social community feed and a discovery hub built with React 19 and Tailwind CSS to gamify and educate users on sustainable disposal.",
+      "Date Completed": "2025-12-01 00:00:00",
+      "File/Link to Sample": "https://github.com/Toneejake/Trashbayoyong",
+      "Reflection ": "This project was my first experience implementing multimodal AI, which taught me how to handle image-to-text processing for practical utility. I learned how to balance high-tech AI features with social elements to create a user-centric experience, emphasizing the importance of \"mobile-first\" responsive design for tools intended for on-the-go usage.",
+      "Skills Demonstrated": "AI/ML: Multimodal AI Integration (Google Gemini 2.5 Flash), Prompt Engineering for classification. \nWeb Development: React 19, Tailwind CSS, Google GenAI SDK. \nProduct Design: Gamification, Social Feature Logic, Knowledge Base Architecture."
+    },
+    {
+      "Item/Project Name": "Berong-Safescape",
+      "Description": "An undergraduate thesis project developed for the Bureau of Fire Protection (BFP) featuring a Next.js frontend and FastAPI backend. It provides an interactive simulation environment to model fire spread and agent-based evacuation behaviors, helping officials analyze and improve building safety protocols.",
+      "Date Completed": "2026-01-01 00:00:00",
+      "File/Link to Sample": "https://github.com/Toneejake/berong-safescape",
+      "Reflection ": "As my undergraduate thesis, this project was a masterclass in professional collaboration and client organization. Beyond the technical challenges, I managed a formal partnership with the BFP, which required translating complex institutional safety needs into functional software requirements. I learned how to maintain a consistent feedback loop with stakeholders and work effectively within a development team to ensure our simulation met real-world emergency standards.",
+      "Skills Demonstrated": "Technical: Next.js, FastAPI, Python, Agent-based Modeling. \nProfessional: Client Relationship Management (BFP Partnership), Project Organization, Technical Documentation, Collaborative Software Development (Git/Agile)."
+    },
+    {
+      "Item/Project Name": "Dental Appointment",
+      "Description": "A secure, full-stack dental clinic management platform built with Vanilla PHP and MySQL. It features interactive teeth selection for procedures, real-time appointment collision detection, and automated SMS notifications integrated via the Twilio API to reduce no-shows.",
+      "Date Completed": "2024-06-01 00:00:00",
+      "File/Link to Sample": "https://github.com/Toneejake/Dental-appointment",
+      "Reflection ": "This project allowed me to implement advanced security protocols, such as password hashing and prepared statements, to protect sensitive patient data. I learned how to manage complex logical constraints, specifically in building a collision detection system for scheduling, and how to improve customer retention through automated third-party communication tools.",
+      "Skills Demonstrated": "Backend: Vanilla PHP, MySQL (Relational Design). Security: SQL Injection Prevention, XSS Protection, Password Hashing. \nAPI Integration: Twilio SDK for SMS. \nFrontend: Bootstrap 5, Interactive JavaScript (Teeth Selection Logic)."
+    }
+  ],
+  "certificates": [
+    {
+      "Seminar Title": "Designing with Figma: From Concept to Creation",
+      "Your Full Name (as shown on cert)": "JOHN KERVIN D. EVANGELISTA",
+      "Date(s) Attended": "2024-10-08 00:00:00",
+      "Organizing Institution": "DICT Bataan",
+      "Duration (Hours)": 3.0,
+      "File Name/Link": "Designing with Figma From Concept to Creation - DICT.pdf",
+      "Brief Description (skills/topics covered)": "UI/UX design, prototyping, vector graphics, and collaborative design using Figma."
+    },
+    {
+      "Seminar Title": "Natural Language Processing Fundamentals",
+      "Your Full Name (as shown on cert)": "JOHN KERVIN DORIA EVANGELISTA",
+      "Date(s) Attended": "2024-10-26 00:00:00",
+      "Organizing Institution": "Asia Open Ran Academy",
+      "Duration (Hours)": 3.0,
+      "File Name/Link": "Natural Language Processing Fundamentals - ASIA OPEN RAN ACADEMY.pdf",
+      "Brief Description (skills/topics covered)": "Text data processing, computational linguistics, and basic NLP techniques."
+    },
+    {
+      "Seminar Title": "Introduction to RAN, 5G, and Open RAN",
+      "Your Full Name (as shown on cert)": "JOHN KERVIN DORIA EVANGELISTA",
+      "Date(s) Attended": "2024-11-23 00:00:00",
+      "Organizing Institution": "Asia Open Ran Academy",
+      "Duration (Hours)": 3.0,
+      "File Name/Link": "Introduction to RAN, 5G, and Open RAN - ASIA OPEN RAN ACADEMY.pdf",
+      "Brief Description (skills/topics covered)": "Overview of Radio Access Network (RAN) architecture, 5G technology, and the principles of Open RAN."
+    },
+    {
+      "Seminar Title": "Linux Fundamentals",
+      "Your Full Name (as shown on cert)": "JOHN KERVIN DORIA EVANGELISTA",
+      "Date(s) Attended": "2024-11-30 00:00:00",
+      "Organizing Institution": "Asia Open Ran Academy",
+      "Duration (Hours)": 3.0,
+      "File Name/Link": "Linux Fundamentals - ASIA OPEN RAN ACADEMY.pdf",
+      "Brief Description (skills/topics covered)": "Basic Linux commands, file system navigation, shell scripting, and user management."
+    },
+    {
+      "Seminar Title": "Artificial Intelligence/Machine Learning",
+      "Your Full Name (as shown on cert)": "JOHN KERVIN DORIA EVANGELISTA",
+      "Date(s) Attended": "2024-12-14 00:00:00",
+      "Organizing Institution": "Asia Open Ran Academy",
+      "Duration (Hours)": 3.0,
+      "File Name/Link": "Artificial Intelligence Machine Learning - ASIA OPEN RAN ACADEMY.pdf",
+      "Brief Description (skills/topics covered)": "Core concepts of AI, machine learning algorithms, and model training."
+    },
+    {
+      "Seminar Title": "Docker For Absolute Beginners",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-22 00:00:00",
+      "Organizing Institution": "Udemy",
+      "Duration (Hours)": 2.0,
+      "File Name/Link": "https://www.udemy.com/certificate/UC-7095d7b9-b4a6-4286-9975-7d08923e5768/",
+      "Brief Description (skills/topics covered)": "Containerization, Docker images, Dockerfiles, and managing containers for application deployment."
+    },
+    {
+      "Seminar Title": "Artificial General Intelligence (AGI)",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-22 00:00:00",
+      "Organizing Institution": "Udemy",
+      "Duration (Hours)": 1.5,
+      "File Name/Link": "https://www.udemy.com/certificate/UC-a831e06b-ce00-4f5c-a58d-65f2340e7978/",
+      "Brief Description (skills/topics covered)": "Concepts, current research, and philosophical implications of creating human-level general AI (AGI)."
+    },
+    {
+      "Seminar Title": "Introduction to Data Science",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-22 00:00:00",
+      "Organizing Institution": "Cisco Networking Academy",
+      "Duration (Hours)": 6.0,
+      "File Name/Link": "Introduction to Data Science - Cisco.pdf",
+      "Brief Description (skills/topics covered)": "Data analysis process, data mining, visualization, and fundamentals of data science."
+    },
+    {
+      "Seminar Title": "Data Analyrics Essentials Course",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-22 00:00:00",
+      "Organizing Institution": "Cisco Networking Academy",
+      "Duration (Hours)": 30.0,
+      "File Name/Link": "Data Analytics - Cisco.pdf",
+      "Brief Description (skills/topics covered)": "Data gathering, cleaning, analysis, statistical methods, and drawing business insights from data."
+    },
+    {
+      "Seminar Title": "Generative AI Fundamentals",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-22 00:00:00",
+      "Organizing Institution": "Databricks Academy",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://credentials.databricks.com/e04ab39c-e5d0-4df0-b310-6d66eb715e97#acc.r4Gb2Jfa",
+      "Brief Description (skills/topics covered)": "Core models (LLMs, Diffusion), applications, and ethical considerations of generative AI."
+    },
+    {
+      "Seminar Title": "Getting Started with Deep Learning",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-22 00:00:00",
+      "Organizing Institution": "NVIDIA",
+      "Duration (Hours)": 8.0,
+      "File Name/Link": "https://learn.nvidia.com/certificates?id=Wr6hcHjPQDO597A4IHd5UA",
+      "Brief Description (skills/topics covered)": "Neural networks, backpropagation, framework setup (e.g., PyTorch/TensorFlow), and model training."
+    },
+    {
+      "Seminar Title": "AI Agent Fundamentals",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-23 00:00:00",
+      "Organizing Institution": "Databricks Academy",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "Academy Accreditation - AI Agent Fundamentals \u2022 John Kervin Evangelista \u2022 Databricks Badges",
+      "Brief Description (skills/topics covered)": "Principles of building, deploying, and monitoring autonomous AI agents."
+    },
+    {
+      "Seminar Title": "Professional Certificate of IBM SPSS Statistics Expert",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-29 00:00:00",
+      "Organizing Institution": "Udemy",
+      "Duration (Hours)": 1.0,
+      "File Name/Link": "https://www.udemy.com/certificate/UC-1c381137-5902-42d3-afe3-c0af5d1b65ae/",
+      "Brief Description (skills/topics covered)": "Advanced statistical analysis, data manipulation, and report generation using IBM SPSS Statistics."
+    },
+    {
+      "Seminar Title": "Data LIteracy",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-10-31 00:00:00",
+      "Organizing Institution": "Datacamp",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.datacamp.com/skill-verification/DL0036718725295",
+      "Brief Description (skills/topics covered)": "Understanding data, interpreting charts, identifying data bias, and making data-informed decisions."
+    },
+    {
+      "Seminar Title": "Prompt Design in Vertex AI",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-16 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": 1.0,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20259214",
+      "Brief Description (skills/topics covered)": "Strategies for crafting effective prompts to guide large language models (LLMs) on Google's Vertex AI platform."
+    },
+    {
+      "Seminar Title": "AI Fundamentals",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-17 00:00:00",
+      "Organizing Institution": "Datacamp",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.datacamp.com/skill-verification/AIF0020149225782",
+      "Brief Description (skills/topics covered)": "Core concepts of Artificial Intelligence, including machine learning, deep learning, and AI application areas."
+    },
+    {
+      "Seminar Title": "Get Started with Google Workspace Tools",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-17 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": 0.5,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20273640",
+      "Brief Description (skills/topics covered)": "Basic functionality and collaboration features of Google Docs, Sheets, Slides, and Drive."
+    },
+    {
+      "Seminar Title": "Data Provacy Awareness",
+      "Your Full Name (as shown on cert)": "JOHN KERVIN D. EVANGELISTA",
+      "Date(s) Attended": "2025-11-17 00:00:00",
+      "Organizing Institution": "DICT Region X",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "Cert_DPA_B1-29 (1).pdf",
+      "Brief Description (skills/topics covered)": "Key principles of data privacy, data protection laws (e.g., Data Privacy Act), and responsible data handling."
+    },
+    {
+      "Seminar Title": "Learning the Bssics of VIBE Coding",
+      "Your Full Name (as shown on cert)": "JOHN KERVIN D. EVANGELISTA",
+      "Date(s) Attended": "2025-11-18 00:00:00",
+      "Organizing Institution": "DICT Region X",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "Cert-VC-315.pdf",
+      "Brief Description (skills/topics covered)": "Introduction to the fundamentals of VIBE coding, likely related to media compression or digital signaling."
+    },
+    {
+      "Seminar Title": "Google Skills Arcade Base Camp November 2025",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-18 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20313139",
+      "Brief Description (skills/topics covered)": "Participation in the Google Cloud/Skills learning challenge, enhancing cloud computing knowledge."
+    },
+    {
+      "Seminar Title": "Google Skills Arcade Trivia November 2025 Week 1",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-18 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20317740",
+      "Brief Description (skills/topics covered)": "Assessment of technical knowledge through a quiz format, specifically related to Google Cloud or relevant technology."
+    },
+    {
+      "Seminar Title": "Implement Multimodal Vector Search with BigQuery\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-20 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20384099",
+      "Brief Description (skills/topics covered)": "Using BigQuery and vector embeddings to perform searches across multiple data types (text, images, etc.)."
+    },
+    {
+      "Seminar Title": "Prepare Data for ML APIs on Google Cloud\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-23 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20434371",
+      "Brief Description (skills/topics covered)": "Data ingestion, transformation, and formatting techniques for training and deploying ML models via Google Cloud APIs."
+    },
+    {
+      "Seminar Title": "Build a Secure Google Cloud Network\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-23 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20434922",
+      "Brief Description (skills/topics covered)": "Implementing security controls, VPC networks, firewall rules, and access management within Google Cloud."
+    },
+    {
+      "Seminar Title": "Streaming Analytics into BigQuery\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-23 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20436029",
+      "Brief Description (skills/topics covered)": "Techniques for ingesting and analyzing real-time data streams using Google Cloud services like Pub/Sub and BigQuery."
+    },
+    {
+      "Seminar Title": "Implement CI/CD Pipelines on Google Cloud\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-23 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20436381",
+      "Brief Description (skills/topics covered)": "Setting up continuous integration and continuous delivery (CI/CD) workflows using Google Cloud tools like Cloud Build and Cloud Deploy."
+    },
+    {
+      "Seminar Title": "Develop Your Google Cloud Network\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-24 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20448427",
+      "Brief Description (skills/topics covered)": "Designing and configuring Virtual Private Cloud (VPC) networks, subnets, and routing for cloud resources."
+    },
+    {
+      "Seminar Title": "Manage Kubernetes in Google Cloud\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-24 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20452749",
+      "Brief Description (skills/topics covered)": "Deployment, scaling, and operational management of containerized applications using Google Kubernetes Engine (GKE)."
+    },
+    {
+      "Seminar Title": "Automate Data Capture at Scale with Document AI\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-24 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20453474",
+      "Brief Description (skills/topics covered)": "Using Document AI to automatically extract, analyze, and process structured data from various document formats (invoices, forms)."
+    },
+    {
+      "Seminar Title": "Cloud Run Functions: 3 Ways\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-24 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20453803",
+      "Brief Description (skills/topics covered)": "Deploying containerized and serverless functions using Google Cloud Run for different application architectures."
+    },
+    {
+      "Seminar Title": "Associate Data Scientist",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-25 00:00:00",
+      "Organizing Institution": "Datacamp",
+      "Duration (Hours)": 90.0,
+      "File Name/Link": "https://www.datacamp.com/certificate/DSA0015750375231",
+      "Brief Description (skills/topics covered)": "Comprehensive data science skills, including Python programming, statistical modeling, machine learning, and data visualization."
+    },
+    {
+      "Seminar Title": "Get Started with Sensitive Data Protection\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-26 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20493078",
+      "Brief Description (skills/topics covered)": "Identifying, classifying, and applying anonymization and de-identification techniques to sensitive data on Google Cloud."
+    },
+    {
+      "Seminar Title": "Create a Secure Data Lake on Cloud Storage\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-26 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20493641",
+      "Brief Description (skills/topics covered)": "Best practices for building a scalable and secure data lake architecture using Google Cloud Storage."
+    },
+    {
+      "Seminar Title": "Develop Serverless Apps with Firebase\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-28 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20545308",
+      "Brief Description (skills/topics covered)": "Building and deploying backend services for web and mobile applications using Firebase tools (Cloud Functions, Firestore, Authentication)."
+    },
+    {
+      "Seminar Title": "Develop Serverless Applications on Cloud Run\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-28 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20545765",
+      "Brief Description (skills/topics covered)": "Creating scalable, containerized, and serverless applications using the fully managed Google Cloud Run service."
+    },
+    {
+      "Seminar Title": "Share Data Using Google Data Cloud\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-11-28 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20546615",
+      "Brief Description (skills/topics covered)": "Methods for securely sharing datasets, dashboards, and analytical insights across organizations using Google Cloud services."
+    },
+    {
+      "Seminar Title": "IBM Z Day 2025 - AI & Data",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-03 00:00:00",
+      "Organizing Institution": "IBM",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.credly.com/badges/2f666a95-4ec5-4284-a231-f632e1748f2b/public_url",
+      "Brief Description (skills/topics covered)": "Latest trends and developments in Artificial Intelligence and Data on the IBM Z platform."
+    },
+    {
+      "Seminar Title": "IBM Z Day 2025 - IBM Z Skills",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-03 00:00:00",
+      "Organizing Institution": "IBM",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.credly.com/badges/bba9f726-1eb9-4d10-a9c1-f1696df8103b/public_url",
+      "Brief Description (skills/topics covered)": "Skills and expertise needed for working with and utilizing the IBM Z platform."
+    },
+    {
+      "Seminar Title": "IBM Z Day 2025 - Modernization\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-03 00:00:00",
+      "Organizing Institution": "IBM",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.credly.com/badges/147406d3-c071-4189-b5c4-de514df63266/public_url",
+      "Brief Description (skills/topics covered)": "Strategies and technologies for modernizing applications and infrastructure on IBM Z."
+    },
+    {
+      "Seminar Title": "IBM Z Day 2025 - Security\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-03 00:00:00",
+      "Organizing Institution": "IBM",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.credly.com/badges/aca1d7e8-e7ad-4ac6-91df-e0326613e5d5/public_url",
+      "Brief Description (skills/topics covered)": "Security best practices, threats, and solutions for the IBM Z environment."
+    },
+    {
+      "Seminar Title": "Store, Process, and Manage Data on Google Cloud - Command Line\n",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-15 00:00:00",
+      "Organizing Institution": "Google Skills",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://www.skills.google/public_profiles/8006dd0b-df06-4fd5-934f-9addde453e57/badges/20903642",
+      "Brief Description (skills/topics covered)": "Using command-line tools (gcloud, gsutil, bq) to interact with and manage data storage and processing services on Google Cloud."
+    },
+    {
+      "Seminar Title": "Gen AI Academy 2.0(Security learning track)",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-15 00:00:00",
+      "Organizing Institution": "Google Cloud and Hack 2 Skill",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://certificate.hack2skill.com/user/genai2security/2025H2S10GENAI-SE00221",
+      "Brief Description (skills/topics covered)": "Concepts in generative AI with a focus on security implications, secure model deployment, and protecting data in AI workflows."
+    },
+    {
+      "Seminar Title": "Gen AI Academy 2.0(Serverless learning track)",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-15 00:00:00",
+      "Organizing Institution": "Google Cloud and Hack 2 Skill",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://certificate.hack2skill.com/user/genai2serverless/2025H2S10GENAI-SR00170",
+      "Brief Description (skills/topics covered)": "Building and deploying generative AI applications using serverless technologies on Google Cloud (e.g., Cloud Run, Cloud Functions)."
+    },
+    {
+      "Seminar Title": "Gen AI Academy 2.0(Networking learning track)",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-15 00:00:00",
+      "Organizing Institution": "Google Cloud and Hack 2 Skill",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://certificate.hack2skill.com/user/genai2networking/2025H2S10GENAI-NE00166",
+      "Brief Description (skills/topics covered)": "Utilizing Google Cloud networking features for robust, high-performance deployment of generative AI models."
+    },
+    {
+      "Seminar Title": "Gen AI Academy 2.0(DevOps learning track)",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-15 00:00:00",
+      "Organizing Institution": "Google Cloud and Hack 2 Skill",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://certificate.hack2skill.com/user/genai2devops/2025H2S10GENAI-DE00323",
+      "Brief Description (skills/topics covered)": "Implementing MLOps and DevOps practices for continuous integration, continuous delivery, and monitoring of generative AI solutions."
+    },
+    {
+      "Seminar Title": "Gen AI Academy 2.0(AI/ML learning track)",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-15 00:00:00",
+      "Organizing Institution": "Google Cloud and Hack 2 Skill",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://certificate.hack2skill.com/user/genai2aiml/2025H2S10GENAI-AIML00335",
+      "Brief Description (skills/topics covered)": "Deep dive into foundational generative AI models, tuning techniques, and best practices for developing AI/ML applications."
+    },
+    {
+      "Seminar Title": "Gen AI Academy 2.0",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-23 00:00:00",
+      "Organizing Institution": "Google Cloud and Hack 2 Skill",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://certificate.hack2skill.com/user/genai2completion1/2025H2S10GENAI-C100034",
+      "Brief Description (skills/topics covered)": "Overall completion of the Gen AI Academy 2.0 curriculum, covering core concepts, tools, and platforms in generative AI."
+    },
+    {
+      "Seminar Title": "Gen AI Academy 2.0(Data learning track)",
+      "Your Full Name (as shown on cert)": "John Kervin Evangelista",
+      "Date(s) Attended": "2025-12-26 00:00:00",
+      "Organizing Institution": "Google Cloud and Hack 2 Skill",
+      "Duration (Hours)": NaN,
+      "File Name/Link": "https://certificate.hack2skill.com/user/genai2data1/2025H2S10GENAI-DA100077",
+      "Brief Description (skills/topics covered)": "Focus on preparing, managing, and utilizing data for training and deploying generative AI models on Google Cloud."
+    }
+  ]
+}
