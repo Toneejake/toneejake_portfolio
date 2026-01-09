@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Sparkles, Loader2, User, Bot } from 'lucide-react';
 import { createChatSession } from '../services/geminiService';
 import { ChatMessage } from '../types';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const AIChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,12 +37,12 @@ const AIChat: React.FC = () => {
       }
 
       const result = await chatSessionRef.current.sendMessageStream({ message: userMsg.text });
-      
+
       // Add a placeholder for the model response
       setMessages(prev => [...prev, { role: 'model', text: '', isStreaming: true }]);
 
       let fullText = '';
-      
+
       for await (const chunk of result) {
         const text = chunk.text; // Access .text property directly
         if (text) {
@@ -53,7 +55,7 @@ const AIChat: React.FC = () => {
           });
         }
       }
-      
+
       // Finalize streaming state
       setMessages(prev => {
         const newArr = [...prev];
@@ -93,7 +95,7 @@ const AIChat: React.FC = () => {
       {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-6 right-6 w-[90vw] md:w-[400px] h-[500px] bg-zinc-900 border border-zinc-700 rounded-2xl shadow-2xl flex flex-col z-50 overflow-hidden animate-in slide-in-from-bottom-10 fade-in duration-300">
-          
+
           {/* Header */}
           <div className="p-4 bg-zinc-800/50 backdrop-blur border-b border-zinc-700 flex justify-between items-center">
             <div className="flex items-center gap-2">
@@ -103,7 +105,7 @@ const AIChat: React.FC = () => {
                 John's AI Agent
               </h3>
             </div>
-            <button 
+            <button
               onClick={() => setIsOpen(false)}
               className="p-1 hover:bg-zinc-700 rounded-full transition-colors"
             >
@@ -114,8 +116,8 @@ const AIChat: React.FC = () => {
           {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {messages.map((msg, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className={`flex gap-3 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 {msg.role === 'model' && (
@@ -123,17 +125,24 @@ const AIChat: React.FC = () => {
                     <Bot className="w-4 h-4 text-emerald-400" />
                   </div>
                 )}
-                
-                <div 
+
+                <div
                   className={`
                     p-3 rounded-2xl text-sm max-w-[80%] 
-                    ${msg.role === 'user' 
-                      ? 'bg-emerald-600 text-white rounded-tr-sm' 
+                    ${msg.role === 'user'
+                      ? 'bg-emerald-600 text-white rounded-tr-sm'
                       : 'bg-zinc-800 text-zinc-200 rounded-tl-sm border border-zinc-700'}
                   `}
                 >
-                  {msg.text}
-                  {msg.isStreaming && <span className="inline-block w-1.5 h-3 ml-1 bg-emerald-400 animate-pulse"/>}
+                  {/* Use ReactMarkdown for model messages to render formatting safely */}
+                  {msg.role === 'model' ? (
+                    <div className="prose prose-invert prose-sm max-w-none text-zinc-200 prose-p:leading-relaxed prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{msg.text}</ReactMarkdown>
+                    </div>
+                  ) : (
+                    <div>{msg.text}</div>
+                  )}
+                  {msg.isStreaming && <span className="inline-block w-1.5 h-3 ml-1 bg-emerald-400 animate-pulse" />}
                 </div>
 
                 {msg.role === 'user' && (

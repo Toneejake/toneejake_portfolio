@@ -3,6 +3,8 @@ import { Send, Sparkles, Loader2, Bot, User, ArrowRight } from 'lucide-react';
 import { createChatSession } from '../services/geminiService';
 import { ChatMessage } from '../types';
 import { PERSONAL_INFO } from '../constants';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const SUGGESTIONS = [
     "Who are you?",
@@ -125,7 +127,13 @@ const HeroChat: React.FC = () => {
                                         : 'bg-zinc-900/50 text-zinc-200 border border-zinc-800 rounded-tl-sm'}
                   `}
                             >
-                                {msg.text}
+                                {msg.role === 'model' ? (
+                                    <div className="prose prose-invert prose-sm max-w-none text-zinc-200 first:mt-0 prose-p:leading-relaxed prose-pre:bg-zinc-800 prose-pre:border prose-pre:border-zinc-700">
+                                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{msg.text}</ReactMarkdown>
+                                    </div>
+                                ) : (
+                                    <div>{msg.text}</div>
+                                )}
                                 {msg.isStreaming && <span className="inline-block w-1.5 h-4 ml-1 bg-emerald-400 animate-pulse align-middle" />}
                             </div>
 
