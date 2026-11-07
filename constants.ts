@@ -1,22 +1,45 @@
-import { Project, SocialLink, Domain, TechSkill, SoftSkill, ProjectAlbum, Certificate } from './types';
+import { Project, SocialLink, Domain, TechSkill, SoftSkill, ProjectAlbum, Certificate, Experience } from './types';
 import { Brain, Database, Code, Layout, BarChart, Terminal, Sparkles } from 'lucide-react';
 
 export const PERSONAL_INFO = {
   name: "John Kervin D. Evangelista",
-  title: "AI/ML Engineer & Data Scientist",
+  title: "Junior Consultant · Data Engineering & AI",
   email: "johnkervinevangelista@gmail.com",
   phone: "09999631798",
   location: "Calumpang, Nagcarlan, Laguna",
-  bio: "I am a Computer Science student specializing in Intelligent Systems with a strong foundation in building AI agents and Digital Twins. My journey involves bridging the gap between theoretical AI models and practical, scalable applications. I am actively seeking impactful internships where I can leverage my skills in Machine Learning and Data Science to solve real-world problems.",
+  bio: "I am a Junior Consultant specializing in data engineering, building Lakehouse pipelines, data quality frameworks, and BI documentation automation on Databricks and Power BI. I hold a BS in Computer Science (Intelligent Systems), where my thesis used AI-driven simulation to support fire-safety planning. I enjoy turning messy enterprise data into reliable, analytics-ready assets, and I am open to freelance work and collaborations in data and AI.",
   education: {
     degree: "Bachelor of Science in Computer Science",
     major: "Intelligent Systems",
     school: "Laguna State Polytechnic University Sta. Cruz",
-    graduation: "June 2026"
+    graduation: "July 2026"
   }
 };
 
+// Client and employer names are intentionally omitted.
+export const EXPERIENCE: Experience[] = [
+  {
+    role: "Junior Consultant — Data Engineering",
+    company: "Data & Analytics Consultancy",
+    duration: "May 2026 – Present",
+    type: "Full-time",
+    description: "Delivering data engineering, BI, and AI/ML enablement work for enterprise clients in the FMCG and beverage industry.",
+    highlights: [
+      "Building the Silver-layer and data quality frameworks for a Databricks medallion (Delta Lake) ingestion pipeline, using parameterized notebooks with switchable SCD Type 1/Type 2 history handling so Dev-to-Prod promotion only changes the workflow.",
+      "Created a reusable Python (openpyxl) workflow that converts Power BI semantic model metadata from DAX Studio into styled, multi-sheet data inventory workbooks.",
+      "Produced a technical knowledge deck distilling a three-day discovery workshop for an AI/ML suggested-ordering initiative, covering architecture, workflows, and data systems.",
+      "Rebuilt a BI platform comparison deck programmatically with python-pptx to make deliverables repeatable."
+    ],
+    tech: ["Databricks", "Delta Lake", "SQL / Spark SQL", "Power BI", "DAX Studio", "Python", "openpyxl", "python-pptx", "Machine Learning"]
+  }
+];
+
 export const DOMAINS: Domain[] = [
+  {
+    title: "Data Engineering",
+    description: "Building Lakehouse pipelines on Databricks with medallion architecture, SCD handling, and automated data quality checks.",
+    icon: Database
+  },
   {
     title: "Generative AI",
     description: "Developing advanced RAG pipelines, fine-tuning LLMs, and building creative AI applications.",
@@ -41,6 +64,9 @@ export const DOMAINS: Domain[] = [
 
 export const TECH_STACK: TechSkill[] = [
   { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Databricks", iconUrl: "https://cdn.simpleicons.org/databricks" },
+  { name: "Power BI", iconUrl: "https://img.icons8.com/color/96/power-bi.png" },
+  { name: "SQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg" },
   { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "TypeScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
   { name: "PyTorch", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
@@ -67,7 +93,7 @@ export const SOFT_SKILLS = [
   "Creativity",
   "Communication",
   "Adaptability",
-  "Continous Learning",
+  "Continuous Learning",
   "Time Management",
   "Teamwork"
 ];
@@ -129,6 +155,14 @@ export const PROJECTS: Project[] = [
   }
 ];
 
+// Albums reference projects by title so each project is only defined once (in PROJECTS above).
+const findProjects = (...titles: string[]): Project[] =>
+  titles.map(t => {
+    const project = PROJECTS.find(p => p.title === t);
+    if (!project) throw new Error(`PROJECT_ALBUMS references unknown project: ${t}`);
+    return project;
+  });
+
 export const PROJECT_ALBUMS: ProjectAlbum[] = [
   {
     id: 'web-ai',
@@ -136,32 +170,7 @@ export const PROJECT_ALBUMS: ProjectAlbum[] = [
     category: "Web & Intelligent Systems",
     cover: "/images/album-web.jpg",
     description: "Modern web applications powered by Artificial Intelligence.",
-    projects: [
-      {
-        title: "SafeScape: AI-Driven Fire Safety",
-        category: "Thesis Project",
-        description: "An undergraduate thesis project for the BFP. An AI perception model generating 2D 'Digital Twins' from floor plans using Deep RL for evacuation policies.",
-        tech: ["Next.js", "FastAPI", "Python", "Deep RL"],
-        link: "https://github.com/Toneejake/berong-safescape",
-        image: "/images/placeholder-project.jpg"
-      },
-      {
-        title: "Trashbayoyong",
-        category: "Web & AI",
-        description: "Smart waste management platform using Google Gemini 2.5 Flash for waste classification, upcycling suggestions, and gamification.",
-        tech: ["React 19", "Tailwind CSS", "Google Gemini API"],
-        link: "https://github.com/Toneejake/Trashbayoyong",
-        image: "/images/placeholder-project.jpg"
-      },
-      {
-        title: "StudyBuddy",
-        category: "Personal Project",
-        description: "AI-powered study assistant with SM-2 spaced repetition and NLP chatbot for optimizing student retention.",
-        tech: ["Python", "Django", "NLP", "Algorithm Design"],
-        link: "https://github.com/Toneejake/studybuddy-prototype",
-        image: "/images/placeholder-project.jpg"
-      }
-    ]
+    projects: findProjects("SafeScape: AI-Driven Fire Safety", "Trashbayoyong", "StudyBuddy")
   },
   {
     id: 'web-dev',
@@ -169,24 +178,7 @@ export const PROJECT_ALBUMS: ProjectAlbum[] = [
     category: "Full Stack Development",
     cover: "/images/album-cloud.jpg", // Reusing image for now
     description: "Robust and secure web applications for real-world management problems.",
-    projects: [
-      {
-        title: "Hospital Management System",
-        category: "Web Development",
-        description: "Full-stack healthcare admin platform with patient records, scheduling, and OpenFDA API integration for drug recommendations.",
-        tech: ["PHP", "MySQL", "Bootstrap 5", "OpenFDA API"],
-        link: "https://github.com/Toneejake/hospital-management",
-        image: "/images/placeholder-project.jpg"
-      },
-      {
-        title: "Dental Appointment System",
-        category: "Web Development",
-        description: "Secure clinic management platform with interactive teeth selection, collision detection, and Twilio SMS notifications.",
-        tech: ["PHP", "MySQL", "Twilio API", "Security"],
-        link: "https://github.com/Toneejake/Dental-appointment",
-        image: "/images/placeholder-project.jpg"
-      }
-    ]
+    projects: findProjects("Hospital Management System", "Dental Appointment System")
   },
   {
     id: 'data-science',
@@ -194,15 +186,7 @@ export const PROJECT_ALBUMS: ProjectAlbum[] = [
     category: "Data Science",
     cover: "/images/album-data.jpg",
     description: "Uncovering hidden patterns and telling stories through data.",
-    projects: [
-      {
-        title: "LA Crime Analysis",
-        category: "Data Analysis",
-        description: "Processed and analyzed LAPD crime dataset to identify behavioral patterns.",
-        tech: ["Pandas", "Matplotlib", "Data Cleaning"],
-        image: "/images/placeholder-project.jpg"
-      }
-    ]
+    projects: findProjects("LA Crime Analysis")
   }
 ];
 
@@ -277,7 +261,7 @@ export const CERTIFICATIONS: Certificate[] = [
     title: "AI Agent Fundamentals",
     issuer: "Databricks Academy",
     date: "October 23, 2025",
-    link: "https://credentials.databricks.com/"
+    link: "" // TODO: add your Databricks badge URL
   },
   {
     title: "Professional Certificate of IBM SPSS Statistics Expert",
@@ -498,7 +482,7 @@ export const CERTIFICATIONS: Certificate[] = [
 ];
 
 export const SOCIALS: SocialLink[] = [
-  { platform: "GitHub", url: "#", iconName: "Github" },
-  { platform: "LinkedIn", url: "#", iconName: "Linkedin" },
+  { platform: "GitHub", url: "https://github.com/Toneejake", iconName: "Github" },
+  { platform: "LinkedIn", url: "https://www.linkedin.com/in/jkevangelista/", iconName: "Linkedin" },
   { platform: "Email", url: `mailto:${PERSONAL_INFO.email}`, iconName: "Mail" }
 ];

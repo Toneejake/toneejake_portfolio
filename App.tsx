@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, MapPin, Download, Award, CheckCircle2, Facebook } from 'lucide-react';
-import { PERSONAL_INFO, DOMAINS, TECH_STACK, SOFT_SKILLS, CERTIFICATIONS } from './constants';
+import { Github, Linkedin, Mail, MapPin, Download, Award, CheckCircle2, Facebook, Briefcase } from 'lucide-react';
+import { PERSONAL_INFO, DOMAINS, TECH_STACK, SOFT_SKILLS, CERTIFICATIONS, EXPERIENCE } from './constants';
 import BentoCard from './components/BentoCard';
 import Navbar from './components/Navbar';
 import LogoLoop from './components/LogoLoop';
@@ -92,11 +92,11 @@ const App: React.FC = () => {
                   I'm {PERSONAL_INFO.name}
                 </h1>
                 <p className="text-base text-emerald-500 font-medium flex flex-wrap gap-2 items-center">
-                  <span>AI Enthusiast</span>
+                  <span>Junior Consultant</span>
                   <span className="text-zinc-700">•</span>
-                  <span>Data Scientist</span>
+                  <span>Data Engineering</span>
                   <span className="text-zinc-700">•</span>
-                  <span>Machine Learning</span>
+                  <span>AI / ML</span>
                 </p>
               </div>
 
@@ -159,12 +159,61 @@ const App: React.FC = () => {
               key=" "
               title=" "
               handle="jkevangelista"
-              status="Machine Learning"
+              status="Data Engineering"
               behindGlowEnabled={false}
             />
           </div>
         </section>
 
+
+        {/* SECTION 1.75: EXPERIENCE */}
+        <section id="experience" className="scroll-mt-28">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">Experience</h2>
+            <p className="text-zinc-500">Where I'm applying data engineering and AI in practice.</p>
+          </div>
+
+          <div className="space-y-6">
+            {EXPERIENCE.map((exp, idx) => (
+              <BentoCard key={idx} className="p-6 md:p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-emerald-500/10 rounded-xl text-emerald-500 shrink-0">
+                      <Briefcase className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white">{exp.role}</h3>
+                      <p className="text-zinc-400">{exp.company}</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col md:items-end gap-1 text-sm shrink-0">
+                    <span className="text-emerald-400 font-medium">{exp.duration}</span>
+                    <span className="text-zinc-500">{exp.type}</span>
+                  </div>
+                </div>
+
+                <p className="text-zinc-300 leading-relaxed mb-4">{exp.description}</p>
+
+                <ul className="space-y-2 mb-6">
+                  {exp.highlights.map((h, i) => (
+                    <li key={i} className="flex items-start gap-3 text-zinc-400 text-sm leading-relaxed">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex flex-wrap gap-2">
+                  {exp.tech.map((t) => (
+                    <span key={t} className="px-3 py-1 text-xs rounded-full bg-zinc-800/60 border border-zinc-700/50 text-zinc-300">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </BentoCard>
+            ))}
+          </div>
+        </section>
 
         {/* SECTION 2: EXPERTISE / DOMAINS */}
         <section id="expertise" className="scroll-mt-28">
@@ -231,7 +280,7 @@ const App: React.FC = () => {
             {/* Row 2: AI/ML, Data & Tools (Right) */}
             <LogoLoop
               logos={TECH_STACK.filter(t =>
-                ["PyTorch", "TensorFlow", "Pandas", "Hugging Face", "Docker", "PostgreSQL", "Git", "GitHub", "NPM"].includes(t.name)
+                ["Databricks", "Power BI", "SQL", "PyTorch", "TensorFlow", "Pandas", "Hugging Face", "Docker", "PostgreSQL", "Git", "GitHub", "NPM"].includes(t.name)
               ).map(tech => ({
                 src: tech.iconUrl,
                 alt: tech.name,
@@ -269,12 +318,15 @@ const App: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[800px] overflow-y-auto custom-scrollbar pr-2">
-            {CERTIFICATIONS.map((cert, idx) => (
-              <a
+            {CERTIFICATIONS.map((cert, idx) => {
+              const CertTag = cert.link ? 'a' : 'div';
+              const linkProps = cert.link
+                ? { href: cert.link, target: "_blank", rel: "noopener noreferrer" }
+                : {};
+              return (
+              <CertTag
                 key={idx}
-                href={cert.link || "#"}
-                target={cert.link ? "_blank" : undefined}
-                rel="noopener noreferrer"
+                {...linkProps}
                 className={`flex items-start gap-4 p-4 rounded-2xl bg-zinc-900/30 border border-zinc-800/50 transition-colors ${cert.link ? 'hover:bg-zinc-800/50 hover:border-emerald-500/30 cursor-pointer' : 'cursor-default'}`}
               >
                 <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-500 shrink-0">
@@ -287,8 +339,9 @@ const App: React.FC = () => {
                     <span className="text-[10px] text-zinc-600">{cert.date}</span>
                   </div>
                 </div>
-              </a>
-            ))}
+              </CertTag>
+              );
+            })}
           </div>
         </section>
 

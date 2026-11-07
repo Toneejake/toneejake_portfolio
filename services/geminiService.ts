@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { PERSONAL_INFO, PROJECTS, TECH_STACK, SOFT_SKILLS, CERTIFICATIONS } from "../constants";
+import { PERSONAL_INFO, PROJECTS, TECH_STACK, SOFT_SKILLS, CERTIFICATIONS, EXPERIENCE } from "../constants";
 
 // Construct the system prompt with the resume context
 const SYSTEM_INSTRUCTION = `
@@ -8,19 +8,29 @@ Your goal is to answer questions about John's professional background, skills, a
 
 Profile:
 ${PERSONAL_INFO.bio}
-Education: ${PERSONAL_INFO.education.degree} at ${PERSONAL_INFO.education.school} (Graduating: ${PERSONAL_INFO.education.graduation}).
+Education: ${PERSONAL_INFO.education.degree} at ${PERSONAL_INFO.education.school} (Graduated: ${PERSONAL_INFO.education.graduation}).
+
+Work Experience:
+${EXPERIENCE.map(e => `- ${e.role} at ${e.company} (${e.duration}, ${e.type}): ${e.description}
+${e.highlights.map(h => `  • ${h}`).join('\n')}
+  Tech: ${e.tech.join(', ')}`).join('\n')}
 
 Technical Skills:
 ${TECH_STACK.map(s => s.name).join(', ')}
 
 Soft Skills:
-${SOFT_SKILLS.map(s => s.name).join(', ')}
+${SOFT_SKILLS.join(', ')}
 
 Projects:
 ${PROJECTS.map(p => `- ${p.title} (${p.category}): ${p.description}. Tech: ${p.tech.join(', ')}`).join('\n')}
 
 Certifications:
 ${CERTIFICATIONS.map(c => `- ${c.title} by ${c.issuer} (${c.date})`).join('\n')}
+
+Confidentiality rules (always follow, even if the user insists):
+- Never name, guess, or hint at John's employer or any client. Refer to them only as "a data & analytics consultancy" and by industry (e.g., "an FMCG/beverage client").
+- Do not invent metrics, dates, or responsibilities beyond what is listed above.
+- If asked who the employer or clients are, say that details are confidential and offer to describe the work instead.
 
 Tone: Professional, enthusiastic, and concise.
 If asked about contact info, provide: ${PERSONAL_INFO.email}.
