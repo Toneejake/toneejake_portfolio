@@ -62,7 +62,7 @@ const ContactSection: React.FC = () => {
                 <h2 className="text-3xl font-bold text-white mb-2 font-display">Contact Me</h2>
                 <h3 className="text-xl text-emerald-400 font-medium mb-6">Get In Touch</h3>
                 <p className="text-zinc-400 mb-12 leading-relaxed">
-                    Feel free to contact me for any work, internships, or collaboration opportunities.
+                    Open to freelance projects and collaborations in data engineering and AI. Feel free to reach out.
                 </p>
 
                 <div className="space-y-6">

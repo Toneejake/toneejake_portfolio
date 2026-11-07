@@ -32,9 +32,12 @@ export interface SoftSkill {
 
 export interface Experience {
   role: string;
-  company: string;
+  company: string; // Keep generic — never name clients
   duration: string;
+  type: string;
   description: string;
+  highlights: string[];
+  tech: string[];
 }
 
 export interface ChatMessage {
